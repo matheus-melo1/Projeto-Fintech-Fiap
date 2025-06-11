@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fintech</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <main class="bg-zinc-900 w-full h-screen">
+    <section class="!text-white font-['Inter'] bg-black w-[428px] max-sm:w-full h-screen mx-auto flex flex-col gap-3">
+      <div class="w-full h-[500px] px-2 pb-2">
+        <img class="w-full h-full rounded-b-2xl" src="./assets/banner.png" />
+      </div>
+      <div class="w-full h-full pb-6 px-4 flex flex-col justify-between gap-3">
+        <div class="flex flex-col gap-3">
+          <h1 class="font-bold !text-white text-2xl">
+            Seu dinheiro, sua liberdade.
+          </h1>
+          <p class="font-normal">
+            Tecnologia e simplicidade para você ter controle, segurança e
+            liberdade total sobre seu dinheiro.
+          </p>
+        </div>
+
+        <button onClick="window.location.href='./pages/login.html'"
+          class="w-full px-5 py-3 rounded-full border-2 flex justify-between items-center border-zinc-800">
+          <span>Entrar</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
