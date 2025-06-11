@@ -1,50 +1,206 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fintech</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fintech</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<body>
-  <main class="bg-zinc-900 w-full h-screen">
-    <section class="!text-white font-['Inter'] bg-black w-[428px] max-sm:w-full h-screen mx-auto flex flex-col gap-3">
-      <div class="w-full h-[500px] px-2 pb-2">
-        <img class="w-full h-full rounded-b-2xl" src="./assets/banner.png" />
-      </div>
-      <div class="w-full h-full pb-6 px-4 flex flex-col justify-between gap-3">
-        <div class="flex flex-col gap-3">
-          <h1 class="font-bold !text-white text-2xl">
-            Seu dinheiro, sua liberdade.
-          </h1>
-          <p class="font-normal">
-            Tecnologia e simplicidade para você ter controle, segurança e
-            liberdade total sobre seu dinheiro.
-          </p>
-        </div>
-
-        <button onClick="window.location.href='./pages/login.html'"
-          class="w-full px-5 py-3 rounded-full border-2 flex justify-between items-center border-zinc-800">
-          <span>Entrar</span>
-          <i class="fa-solid fa-arrow-right"></i>
+  <body>
+    <main class="relative bg-zinc-900 w-full h-screen flex flex-col">
+      <nav
+        class="z-20 absolute bottom-5 left-1/2 -translate-x-1/2 px-4 py-2 flex items-center gap-3 rounded-full border border-zinc-800 bg-zinc-900"
+      >
+        <button class="w-8 h-8 bg-white text-black rounded-full">
+          <i class="fa-solid fa-dollar-sign"></i>
         </button>
-      </div>
-    </section>
-  </main>
-</body>
+        <button class="w-8 h-8 text-white rounded-full">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </button>
+        <button class="w-8 h-8 text-white rounded-full">
+          <i class="fa-regular fa-map"></i>
+        </button>
+      </nav>
 
+      <section
+        class="relative !text-white font-['Inter'] w-[428px] max-sm:w-full h-screen mx-auto flex flex-col"
+      >
+        <section class="z-10 px-4 py-5 flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <img
+              class="w-10 h-10 object-cover rounded-full"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Hb5xzFZJCTW4cMqmPwsgfw-gILUV7QevvQ&s"
+            />
+            <p>Priscilla</p>
+          </div>
+          <button class="w-10 h-10 text-white rounded-full">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+        </section>
+
+        <section
+          class="relative z-10 px-4 pb-5 py-6 flex flex-col gap-4 bg-black rounded-t-2xl"
+        >
+          <div class="flex items-center justify-between">
+            <p class="font-bold text-3xl">R$2.346,80</p>
+            <button class="w-10 h-10 text-white rounded-full">
+              <i class="fa-solid fa-eye text-xl"></i>
+            </button>
+          </div>
+          <div class="flex items-center gap-2">
+            <button
+              class="rounded-full px-5 py-1.5 bg-zinc-900 flex items-center gap-3"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <p class="text-base font-semibold">Pix</p>
+            </button>
+            <button
+              class="rounded-full px-5 py-1 bg-zinc-900 flex items-center gap-3"
+            >
+              <i class="fa-solid fa-piggy-bank"></i>
+              <p class="text-base font-semibold">Cofrinho</p>
+            </button>
+            <button
+              class="rounded-full px-5 py-1 bg-zinc-900 flex items-center gap-3"
+            >
+              <i class="fa-solid fa-mobile"></i>
+              <p class="text-base font-semibold">Recarga</p>
+            </button>
+          </div>
+          <div class="absolute w-full h-8 left-0 -bottom-4 bg-black"></div>
+        </section>
+
+        <section
+          class="z-10 w-full h-full bg-white text-zinc-800 rounded-t-2xl"
+        >
+          <div class="px-4 py-5 flex items-center justify-between">
+            <p class="font-semibold text-2xl">Transações</p>
+            <button class="w-10 h-10 rounded-full">
+              <i class="fa-solid fa-arrow-down"></i>
+            </button>
+          </div>
+          <div class="flex flex-col gap-7">
+            <div class="px-4 flex flex-col gap-4">
+              <p class="font-bold text-lg text-zinc-600">HOJE</p>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-14"
+                    src="https://raquetes.shop/wp-content/uploads/2025/04/Adidas-Logo.webp"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Camiseta sport</p>
+                    <p class="text-sm text-zinc-600">Roupas</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">-R$129,90</p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-14"
+                    src="https://logodownload.org/wp-content/uploads/2015/02/carrefour-logo-1-1.png"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Mercado</p>
+                    <p class="text-sm text-zinc-600">Comida</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">-R$256,76</p>
+              </div>
+            </div>
+
+            <div class="px-4 flex flex-col gap-4">
+              <p class="font-bold text-lg text-zinc-600">14 DE ABRIL</p>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-14"
+                    src="https://png.co.ke/wp-content/uploads/2024/05/CITYPNG.COMNetflix-Vector-Flat-Logo-886x885-1.png"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Assinatura da Netflix</p>
+                    <p class="text-sm text-zinc-600">Entretenimento</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">-R$44,90</p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-12 p-1"
+                    src="https://imagensempng.com.br/wp-content/uploads/2023/06/logo-pix-icone-1024.png"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Pix do Marcelo</p>
+                    <p class="text-sm text-zinc-600">Transação</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">R$150,00</p>
+              </div>
+            </div>
+
+            <div class="px-4 flex flex-col gap-4">
+              <p class="font-bold text-lg text-zinc-600">9 DE ABRIL</p>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-12 p-1"
+                    src="https://img.icons8.com/fluent/512/crunchyroll.png"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Assinatura Crunchyroll</p>
+                    <p class="text-sm text-zinc-600">Entretenimento</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">-R$20,90</p>
+              </div>
+
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <img
+                    class="w-12 p-1"
+                    src="https://imagensempng.com.br/wp-content/uploads/2023/06/logo-pix-icone-1024.png"
+                  />
+                  <div class="flex flex-col">
+                    <p class="font-bold text-lg">Pix para Roberto</p>
+                    <p class="text-sm text-zinc-600">Transação</p>
+                  </div>
+                </div>
+                <p class="font-semibold text-lg">-R$65,00</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <img
+          class="absolute w-full top-0"
+          src="https://img.freepik.com/free-vector/black-background-with-wavy-lines_52683-76524.jpg?semt=ais_items_boosted&w=740"
+        />
+      </section>
+    </main>
+  </body>
 </html>
